@@ -13,6 +13,10 @@
     // Changes for <button> element
     border: none;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      max-width: 18rem;
+    }
   }
 
   &:hover {

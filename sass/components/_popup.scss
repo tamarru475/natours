@@ -21,11 +21,21 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s ease;
+
+    @include respond(tab-land) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
     width: 33.3333333333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 50%;
+      display: flex;
+    }
   }
 
   &__right {
@@ -33,6 +43,12 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__img {
@@ -69,11 +85,24 @@
       position: absolute;
       top: 2.5rem;
       right: 2.5rem;
-      font-size: 3rem;
+      font-size: 6rem;
       line-height: 1;
       text-decoration: none;
       display: inline-block;
       transition: all 0.2s;
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 4rem;
+      }
+
+      @include respond(phone) {
+        top: 0.5rem;
+        right: 1rem;
+      }
     }
 
     &:hover {
