@@ -18,5 +18,13 @@ Creator of this code is me : Tamar Rubin
 - BEM.
 - Pure CSS popup modle.
 - Form.
+- Graceful degradation.
+
+**_Hoping to add:_**
+
+- close nav when click link
+- close popup when click outside + escape.
+- add more comments.
+- add more variables.
 
 Very Excited about this one! more to come...
